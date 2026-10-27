@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="430" viewBox="0 0 1080 430" role="img" aria-label="水平环绕八方向与高位重叠补拍示意">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#286b55"/></marker></defs>
+<rect width="1080" height="430" rx="16" fill="#f3f6f1"/>
+<g font-family="Microsoft YaHei,Arial,sans-serif" fill="#253a36"><text x="32" y="38" font-size="22" font-weight="bold">A 水平主录像 · 俯视示意</text><text x="580" y="38" font-size="22" font-weight="bold">B 高位补拍 · 侧视示意</text>
+<ellipse cx="265" cy="235" rx="57" ry="71" fill="#cfbfa9"/><path d="M252 168 L265 151 L278 168" fill="#cfbfa9"/><path d="M253 168L265 153L277 168" fill="none" stroke="#887a67"/>
+<circle cx="265" cy="235" r="127" fill="none" stroke="#c0cec2" stroke-dasharray="6 6"/>
+<path d="M365 155 A127 127 0 1 1 163 155" fill="none" stroke="#286b55" stroke-width="3" marker-end="url(#arrow)"/>
+<g font-size="15" text-anchor="middle"><text x="265" y="88">0° 正面</text><text x="402" y="128">45°</text><text x="435" y="240">90° 右侧</text><text x="400" y="346">135°</text><text x="265" y="391">180° 后脑</text><text x="126" y="346">225°</text><text x="87" y="240">270° 左侧</text><text x="125" y="128">315°</text></g>
+<path d="M530 55V398" stroke="#d4ded4"/>
+<ellipse cx="780" cy="249" rx="47" ry="66" fill="#cfbfa9"/><path d="M818 231L840 245L822 252" fill="#cfbfa9"/><rect x="765" y="308" width="30" height="43" fill="#cfbfa9"/>
+<rect x="990" y="225" width="36" height="27" rx="4" fill="#627c6a"/><path d="M990 238L847 249" stroke="#87998b" stroke-width="2" stroke-dasharray="5 4"/>
+<rect x="959" y="111" width="36" height="27" rx="4" fill="#286b55" transform="rotate(35 977 125)"/>
+<path d="M961 137L811 226" stroke="#286b55" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M803 185L960 129L828 267" fill="#286b55" opacity=".10"/>
+<text x="863" y="86" font-size="16">高位约向下 35–50°</text><text x="905" y="282" font-size="15">主段：鼻眼高度</text><text x="583" y="384" font-size="16">顶部段保留侧脸／耳部重叠，不只拍正上方近景</text>
+</g></svg>

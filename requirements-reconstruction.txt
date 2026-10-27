@@ -1,0 +1,11 @@
+-r requirements-demo.txt
+# Optional reconstruction stack; demo does not import these packages.
+opencv-python>=4.8,<5
+Pillow>=10,<13
+scikit-image>=0.23,<1
+torch>=2.4,<3
+onnxruntime==1.20.2
+mapbox-earcut==2.1.0
+rtree==1.4.1
+shapely>=2,<3
+# External SDKs, detector/segmentation weights and COLMAP are installed separately.

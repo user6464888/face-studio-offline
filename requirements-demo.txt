@@ -1,0 +1,6 @@
+# Tested direct dependencies: CPython 3.11.7, Windows x64.
+numpy==2.3.4
+scipy==1.16.2
+trimesh==5.1.1
+open3d==0.19.0
+networkx==3.4.2

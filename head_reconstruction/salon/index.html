@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Face Studio · 19 款离线发型演示</title>
+<script type="importmap">{"imports":{"three":"../viewer/vendor/three.module.js"}}</script>
+<link rel="stylesheet" href="studio.css"><style>
+.release-note{font-size:12px;color:#66746b}.release-steps{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0;color:#66746b;font-size:12px}.release-steps span{padding:9px;background:#e8eee8;border-radius:8px}.release-card{text-align:left;display:block;width:100%;padding:16px;border:1px solid #dae1d9;border-radius:12px;background:white;color:#253b31}.release-card.active{border:2px solid #456b54;background:#f2f7f1}.release-card strong,.release-card small{display:block}.release-card small{margin-top:9px;line-height:1.6;color:#66746b}.workspace{align-items:start}.catalog-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}.release-advice{padding:13px;background:#eef3eb;border-radius:10px;line-height:1.6}.release-error{padding:20px;color:#9b2424}.preview img{max-width:100%}
+</style></head><body>
+<header><div><span class="brand">FACE STUDIO</span><h1>19 款离线发型演示</h1><p>7 种程序化示意头 · 三层混合头发 · 本地生成与展示</p></div><span class="pill">研究原型 · v0.1.0</span></header>
+<p id="job-notice" role="status">正在准备演示…</p>
+<div class="release-steps" aria-label="重建流程"><span>1 主录像＋顶部补拍</span><span>2 原始脸模</span><span>3 光头底模</span><span>4 脸型初判</span><span>5 款式建议</span><span>6 更换展示</span></div>
+<p class="release-note">当前是无需录像的示意头演示。处理自己的素材请使用命令行重建入口，步骤见仓库 README；演示头不是扫描结果或人群脸型分类标准。</p>
+<div class="toolbar"><label>头模 <select id="head-select" aria-label="选择展示头模"></select></label><label>选款脸型 <select id="face-select" aria-label="选款脸型（真人可更正）"></select></label><label>款式 <select id="style-select" aria-label="选择发型"></select></label></div>
+<main class="workspace"><aside id="details"></aside><section class="preview"><div class="preview-top"><div><strong id="preview-title">正在准备头模…</strong><span id="preview-caption">拖动旋转、滚轮缩放</span></div><button id="fit">重置视角</button></div>
+<fieldset class="hair-layers" id="hair-layers"><legend>发层显示</legend><label><input type="checkbox" data-hair-layer="short" checked>短发底层</label><label><input type="checkbox" data-hair-layer="medium" checked>中发过渡层</label><label><input type="checkbox" data-hair-layer="long" checked>长发丝层</label><span id="layer-note"></span></fieldset>
+<div id="canvas"></div><div class="preview-tools" id="views"><button data-angle="0">正面</button><button data-angle="90">左侧</button><button data-angle="180">后脑</button><button data-angle="270">右侧</button><button data-angle="top">头顶</button><button id="rotate">自动旋转：关</button></div>
+<div class="look-controls"><div class="segmented"><button data-display="style" class="active">发型</button><button data-display="bald">光头</button><button data-display="original" disabled>原始采集</button></div><label>发色 <select id="color" aria-label="发色"><option value="original">原色</option><option value="#17181c">自然黑</option><option value="#634332">栗棕</option><option value="#b28c59">浅金</option><option value="#9da2aa">银灰</option><option value="#795679">紫棕</option></select></label><button id="snapshot">保存 PNG</button></div><p id="render-status" role="status">首次选择一个组合时，会在本机生成发型；请稍候。</p></section></main>
+<section class="catalog-section"><div class="section-heading"><div><span class="eyebrow">程序化款式目录</span><h2>全部 19 款</h2><p>建议只改变排序，每个头模都能选择全部款式。保留原款式编号。</p></div><label>排序 <select id="sort" aria-label="款式排序"><option value="number">按原编号</option><option value="recommended">按当前脸型推荐</option><option value="easy">优先容易打理</option></select></label></div><div id="catalog" class="catalog-grid"></div></section>
+<footer><p>程序化示意头与发型不依赖真人录像、外部头模或照片。七种脸型是同一个原创数学头模的区域变形，属于演示近似；发型和隐藏头皮也包含估计。脸型建议用于款式比较，没有经标注人群验证的准确率。新版支持 PNG 保存，不提供 GIF／GLB 发型导出。</p></footer>
+<script type="module" src="studio.js"></script></body></html>

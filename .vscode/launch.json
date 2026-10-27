@@ -1,0 +1,1 @@
+{"version":"0.2.0","configurations":[{"name":"Face Studio: demo","type":"debugpy","request":"launch","program":"${workspaceFolder}/main.py","args":["--demo"],"console":"integratedTerminal","cwd":"${workspaceFolder}"}]}
